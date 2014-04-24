@@ -1,5 +1,7 @@
 code for Large Scale Hierarchical Text Classification competition.
 
+http://www.kaggle.com/c/lshtc
+
 # Summary
 
 a centroid-based flat classifier.
