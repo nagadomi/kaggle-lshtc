@@ -103,12 +103,12 @@ main(void)
 	printf("read %ld, %ld, %ldms\n", data.size(), labels.size(), tick() - t);
 	reader.close();
 
-	if (!cache.load("vt_ncc_cache.bin")) {
-		std::fprintf(stderr, "failed: vt_ncc_cache.bin: please either run ./vt_prefetch\n");
+	if (!cache.load(CACHE)) {
+		std::fprintf(stderr, "failed: please either run ./vt_prefetch\n");
 		return -1;
 	}
-	if (!cache_test.load("vt_ncc_cache_test.bin")) {
-		std::fprintf(stderr, "failed: vt_ncc_cache.bin: please either run ./vt_prefetch\n");
+	if (!cache_test.load(CACHE_TEST)) {
+		std::fprintf(stderr, "failed: please either run ./vt_prefetch\n");
 		return -1;
 	}
 	

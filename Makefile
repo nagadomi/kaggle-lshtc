@@ -25,5 +25,6 @@ vt_prefetch: prefetch.cpp reader.hpp tick.hpp util.hpp  inverted_index.hpp tfidf
 	$(CXX) prefetch.cpp -o vt_prefetch -DVALIDATION_TEST=1 $(CXXFLAGS)
 
 vt_classifier: vt_classifier.cpp reader.hpp tick.hpp util.hpp  inverted_index.hpp tfidf_transformer.hpp ncc_cache.hpp binary_classifier.hpp SETTINGS.h
+	$(CXX) vt_classifier.cpp -o vt_classifier -DVALIDATION_TEST=1 $(CXXFLAGS)
 
 validation: validation.cpp reader.hpp tick.hpp util.hpp inverted_index.hpp tfidf_transformer.hpp nearest_centroid_classifier.hpp classifier_storage.hpp binary_classifier.hpp SETTINGS.h
