@@ -65,7 +65,7 @@ read_data(std::vector<fv_t> &data,
 void
 make_submission(const std::vector<std::pair<int, std::vector<int> > > &submission)
 {
-	FILE *fp = fopen("./submission.txt", "w");
+	FILE *fp = fopen(SUBMISSION, "w");
 	fprintf(fp, "Id,Predicted\n");
 	for (auto i = submission.begin(); i != submission.end(); ++i) {
 		bool first = true;

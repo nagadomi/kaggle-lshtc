@@ -18,6 +18,7 @@
 #  define WEIGHT      "./weight.bin"
 #  define MODEL       "./model.bin"
 #endif
+#define SUBMISSION    "./submission.txt"
 
 #define VT_SEED     13
 
