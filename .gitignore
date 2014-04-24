@@ -1,0 +1,12 @@
+*~
+*.bin
+prefetch
+train
+predict
+vt_ncc
+vt_knn
+vt_prefetch
+vt_train
+vt_classifier
+validation
+
