@@ -29,3 +29,5 @@ vt_classifier: vt_classifier.cpp reader.hpp tick.hpp util.hpp  inverted_index.hp
 
 validation: validation.cpp reader.hpp tick.hpp util.hpp inverted_index.hpp tfidf_transformer.hpp nearest_centroid_classifier.hpp classifier_storage.hpp binary_classifier.hpp SETTINGS.h
 	$(CXX) validation.cpp -o validation -DVALIDATION_TEST=1 $(CXXFLAGS)
+
+knn: knn.cpp reader.hpp tick.hpp util.hpp inverted_index.hpp tfidf_transformer.hpp SETTINGS.h
