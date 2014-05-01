@@ -1,10 +1,10 @@
 CXXFLAGS=-std=c++0x -fopenmp -funroll-loops -march=native -Wno-unused-function -D_GLIBCXX_PARALLEL -Ofast -g -Wall -DNDEBUG 
 CXX=g++
 
-all: prefetch train predict vt_ncc vt_knn vt_prefetch vt_train vt_classifier validation
+all: prefetch train predict vt_ncc vt_knn vt_prefetch vt_train vt_classifier validation knn
 
 clean:
-	rm -fr prefetch train predict vt_ncc vt_knn vt_prefetch vt_train vt_classifier validation
+	rm -fr prefetch train predict vt_ncc vt_knn vt_prefetch vt_train vt_classifier validation knn
 
 prefetch: prefetch.cpp reader.hpp tick.hpp util.hpp  inverted_index.hpp tfidf_transformer.hpp ncc_cache.hpp  nearest_centroid_classifier.hpp SETTINGS.h
 	$(CXX) prefetch.cpp -o prefetch -DVALIDATION_TEST=0 $(CXXFLAGS)
