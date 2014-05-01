@@ -45,9 +45,7 @@ generate sumission.txt.
 
     ./knn
 
-This model gets LBMaF:0.23088 in Kaggle LSTHC competition.
-
-## Simple Nearest Centroid Classifier baseline
+## Simple Nearest Centroid Classifier
 
 validation test.
 
@@ -56,8 +54,6 @@ validation test.
 generate sumission.txt.
 
     ./ncc
-
-This model gets LBMaF:0.28931 in Kaggle LSTHC competition.
 
 ## Figure
 
