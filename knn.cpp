@@ -73,7 +73,6 @@ int main(void)
 	std::vector<fv_t> test_data;
 	std::vector<label_t> labels;
 	std::vector<label_t> dummy_labels;
-	category_index_t category_index;
 	TFIDFTransformer tfidf;
 	long t = tick();
 	Evaluation evaluation;
@@ -94,9 +93,6 @@ int main(void)
 		   data.size(), test_data.size(), tick() - t);
 	reader.close();
 	test_reader.close();
-	
-	t = tick();
-	build_category_index(category_index, data, labels);
 	
 	t = tick();
 	tfidf.train(data);
