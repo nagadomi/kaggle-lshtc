@@ -58,3 +58,20 @@ generate sumission.txt.
     ./ncc
 
 This model gets LBMaF:0.28931 in Kaggle LSTHC competition.
+
+## Figure
+
+<table>
+  <tr>
+     <th>Model</th><th>LBMaF</th><th>Training Time</th><th>Prediction Time</th>
+  </tr>
+  <tr>
+    <td>k-NN</td><td>0.23088</td><td>n/a</td><td>10 minutes</td>
+  </tr>
+  <tr>
+    <td>NCC</td><td>0.28931</td><td>80 sec</td><td>2 hours</td>
+  </tr>
+  <tr>
+    <td>NCC+BC</td><td>0.33025</td><td>15 hours</td><td>2 hours</td>
+  </tr>
+</table>
