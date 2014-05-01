@@ -9,4 +9,7 @@ vt_prefetch
 vt_train
 vt_classifier
 validation
+knn
+ncc
+submission.txt
 

@@ -35,10 +35,26 @@ NOTE: ./prefetch is very slow. probably processing time exceeds 15 hours.
     ./vt_train
     ./validation
 
-## Running the Simple k-NN baseline
+## Simple k-NN baseline
+
+validation test.
 
     ./vt_knn
 
-## Running the Simple Centroid Classifier baseline
+generate sumission.txt.
+
+    ./knn
+
+This model gets LBMaF:0.23088 in Kaggel LSTHC competition.
+
+## Simple Nearest Centroid Classifier baseline
+
+validation test.
 
     ./vt_ncc
+
+generate sumission.txt.
+
+    ./ncc
+
+This model gets LBMaF:0.28931 in Kaggel LSTHC competition.
