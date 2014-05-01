@@ -3,9 +3,7 @@
 #include "tick.hpp"
 #include "tfidf_transformer.hpp"
 #include "inverted_index.hpp"
-#include "evaluation.hpp"
 #include <cstdio>
-#include <map>
 #include "SETTINGS.h"
 
 #define K              12
@@ -75,7 +73,6 @@ int main(void)
 	std::vector<label_t> dummy_labels;
 	TFIDFTransformer tfidf;
 	long t = tick();
-	Evaluation evaluation;
 	InvertedIndex knn;
 	std::vector<std::pair<int, std::vector<int> > > submission;	
 	
