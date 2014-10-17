@@ -6,8 +6,29 @@ http://www.kaggle.com/c/lshtc
 
 a centroid-based flat classifier.
 
-1. Extract K-candidate categories by Nearest Centroid Classifier.
-2. Remove some missclassified categories by Binary Classifier from candidate categories.
+## Prediction
+
+1. Selecting k-class from near the query with nearest centroid classifier.
+2. Judging with binary classifier whether the query can be accepted to class.
+(predict.cpp)
+
+![predict1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict1.png)
+![predict2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict2.png)
+![predict3](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict3.png)
+
+## Training
+
+For each data points..
+1. Selecting k-class from near the data point with nearest centroid classifier.
+2. Adding the data point as training data to dataset for each classes.
+(prefetch.cpp)
+
+For each classes..
+1. Learning the binary classifier using own dataset.
+(train.cpp)
+
+![train1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train1.png)
+![train2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train2.png)
 
 # Requirements
 
@@ -37,21 +58,21 @@ NOTE: ./prefetch is very slow. probably processing time exceeds 15 hours.
 
 ## Simple k-NN baseline
 
-validation test.
+running the validation test.
 
     ./vt_knn
 
-generate sumission.txt.
+generating the sumission.txt.
 
     ./knn
 
 ## Simple Nearest Centroid Classifier
 
-validation test.
+running the validation test.
 
     ./vt_ncc
 
-generate sumission.txt.
+generating the sumission.txt.
 
     ./ncc
 
