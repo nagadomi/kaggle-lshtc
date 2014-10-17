@@ -10,6 +10,7 @@ a centroid-based flat classifier.
 
 1. Selecting k-class from near the query with nearest centroid classifier.
 2. Judging with binary classifier whether the query can be accepted to class.
+
 (predict.cpp)
 
 ![predict1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict1.png)
@@ -19,12 +20,16 @@ a centroid-based flat classifier.
 ## Training
 
 For each data points..
+
 1. Selecting k-class from near the data point with nearest centroid classifier.
 2. Adding the data point as training data to dataset for each classes.
+
 (prefetch.cpp)
 
 For each classes..
+
 1. Learning the binary classifier using own dataset.
+
 (train.cpp)
 
 ![train1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train1.png)
