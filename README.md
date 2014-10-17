@@ -1,4 +1,4 @@
-code for Large Scale Hierarchical Text Classification competition.
+Code for Large Scale Hierarchical Text Classification competition.
 
 http://www.kaggle.com/c/lshtc
 
