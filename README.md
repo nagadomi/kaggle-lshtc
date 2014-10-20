@@ -15,11 +15,11 @@ a centroid-based flat classifier.
 
 ![predict1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict1.png)
 
-Centroid of class close to the query.
+Selecting k-candidate classes that centroid of class close to the query.
  
 ![predict2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict2.png)
 
-Binary classifier of class returns p > 0.5. (Implementation of the binary classifier is logistic regression)
+Selecting classes that binary classifier of class returns p > 0.5. (Implementation of the binary classifier is logistic regression)
 
 ![predict3](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict3.png)
 
