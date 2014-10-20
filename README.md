@@ -14,7 +14,13 @@ a centroid-based flat classifier.
 (predict.cpp)
 
 ![predict1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict1.png)
+
+Centroid of class close to the query.
+ 
 ![predict2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict2.png)
+
+Binary classifier of class returns p > 0.5. (Implementation of the binary classifier is logistic regression)
+
 ![predict3](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/predict3.png)
 
 ## Training
@@ -34,6 +40,19 @@ For each classes..
 
 ![train1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train1.png)
 ![train2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train2.png)
+
+## What is the feature 
+using variant TF-IDF.
+```
+tf = log(number_of_term_occurs_in_document + 1)
+idf = log(total_number_of_documents / (number_of_documents_containing_term + 1)) + 5
+tfidf = tf * idf
+```
+and feature vector is normalized by L2 norm.
+(code: tfidf_transformer.hpp)
+
+## What is the metric of Centroid Classifier
+using cosine similarity.
 
 # Requirements
 
