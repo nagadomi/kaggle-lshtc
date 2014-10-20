@@ -41,7 +41,7 @@ For each classes..
 ![train1](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train1.png)
 ![train2](https://raw.githubusercontent.com/nagadomi/kaggle-lshtc/master/figure/train2.png)
 
-## What is the feature 
+## What are the feature 
 using variant TF-IDF.
 ```
 tf = log(number_of_term_occurs_in_document + 1)
@@ -51,7 +51,7 @@ tfidf = tf * idf
 and feature vector is normalized by L2 norm.
 (code: tfidf_transformer.hpp)
 
-## What is the metric of Centroid Classifier
+## What are the metric for Centroid Classifier
 using cosine similarity.
 
 # Requirements
